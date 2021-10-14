@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Activité de sélection</string>
+    <string name="instructions">Cliquez sur une image ci-dessous pour voir</string>
+    <string name="andromeda">Galaxie d\'Andromède</string>
+    <string name="black_hole">Photo d\'un trou noir</string>
+    <string name="comet">La comète de Halley</string>
+    <string name="helix_nebula">La nébuleuse de l\'hélice</string>
+    <string name="hubble">Le champ ultra-profond de Hubble</string>
+    <string name="io">Lune Jovienne Io</string>
+    <string name="jupiter">Jupiter, avec la tache rouge visible</string>
+    <string name="milky_way">La Voie Lactée</string>
+    <string name="pillars_of_creation">Nébuleuse des piliers de la création</string>
+    <string name="supernova">Une supernova, une étoile mourante</string>
+    <string name="triangulum">La Galaxie du Triangle, à 2,723 millions d\'années-lumière</string>
+    <string name="vela_pulsar">Le Vela Pulsar</string>
+</resources>

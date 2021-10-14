@@ -21,18 +21,18 @@ class SelectionActivity : AppCompatActivity(), CustomAdapter.ClickListener {
     private fun generateItemList(): List<SpaceItem> {
         val itemList = ArrayList<SpaceItem>()
 
-        itemList.add(SpaceItem(R.drawable.andromeda, "Andromeda Galaxy"))
-        itemList.add(SpaceItem(R.drawable.black_hole, "Photo of a Black Hole"))
-        itemList.add(SpaceItem(R.drawable.comet, "Halley's Comet"))
-        itemList.add(SpaceItem(R.drawable.helix_nebula, "The Helix Nebula"))
-        itemList.add(SpaceItem(R.drawable.hubble, "The Hubble Ultra Deep Field"))
-        itemList.add(SpaceItem(R.drawable.io, "Jovian moon Io"))
-        itemList.add(SpaceItem(R.drawable.jupiter, "Jupiter, with the red spot visible"))
-        itemList.add(SpaceItem(R.drawable.milky_way, "The Milky Way Galaxy"))
-        itemList.add(SpaceItem(R.drawable.pillars_of_creation, "The Pillars of Creation Nebula"))
-        itemList.add(SpaceItem(R.drawable.supernova, "A supernova, a dying star"))
-        itemList.add(SpaceItem(R.drawable.triangulum, "The Triangulum Galaxy, 2.723 million lightyears away"))
-        itemList.add(SpaceItem(R.drawable.vela_pulsar, "The Vela Pulsar"))
+        itemList.add(SpaceItem(R.drawable.andromeda, getString(R.string.andromeda)))
+        itemList.add(SpaceItem(R.drawable.black_hole, getString(R.string.black_hole)))
+        itemList.add(SpaceItem(R.drawable.comet, getString(R.string.comet)))
+        itemList.add(SpaceItem(R.drawable.helix_nebula, getString(R.string.helix_nebula)))
+        itemList.add(SpaceItem(R.drawable.hubble, getString(R.string.hubble)))
+        itemList.add(SpaceItem(R.drawable.io, getString(R.string.io)))
+        itemList.add(SpaceItem(R.drawable.jupiter, getString(R.string.jupiter)))
+        itemList.add(SpaceItem(R.drawable.milky_way, getString(R.string.milky_way)))
+        itemList.add(SpaceItem(R.drawable.pillars_of_creation, getString(R.string.pillars_of_creation)))
+        itemList.add(SpaceItem(R.drawable.supernova, getString(R.string.supernova)))
+        itemList.add(SpaceItem(R.drawable.triangulum, getString(R.string.triangulum)))
+        itemList.add(SpaceItem(R.drawable.vela_pulsar, getString(R.string.vela_pulsar)))
 
         return itemList
     }

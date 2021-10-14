@@ -4,6 +4,20 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        debug {
+            storeFile file('C:\\Users\\Tyler\\Desktop\\Key\\KeyRestart.jks')
+            storePassword 'Positron6'
+            keyAlias 'key0'
+            keyPassword 'Positron6'
+        }
+        release {
+            storeFile file('C:\\Users\\Tyler\\Desktop\\Key\\KeyRestart.jks')
+            keyAlias 'key0'
+            storePassword 'Positron6'
+            keyPassword 'Positron6'
+        }
+    }
     compileSdk 31
 
     defaultConfig {
@@ -20,6 +34,10 @@ android {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            signingConfig signingConfigs.debug
         }
     }
     compileOptions {
@@ -36,8 +54,8 @@ dependencies {
     implementation 'androidx.core:core-ktx:1.6.0'
     implementation 'androidx.appcompat:appcompat:1.3.1'
     implementation 'com.google.android.material:material:1.4.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.0'
-    testImplementation 'junit:junit:4.+'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
+    testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 }
